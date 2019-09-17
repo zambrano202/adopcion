@@ -1,0 +1,167 @@
+<body>
+    <div class="container h-100">
+        <div class="row justify-center h-100">
+            <div class="col-lg-m12 my-auto">
+                <div class="header-content mx-auto">
+                    <div>
+                        <tr>
+
+                            <button class="btn btn-danger mb-3" (click)="primero=!primero"
+                                (click)="activo='primero'">Perros</button>
+
+                        </tr>
+                    </div>
+
+                    <br>
+                    <div>
+                        <tr>
+                            <button class="btn btn-danger mb-3" (click)="segundo=!segundo"
+                                (click)="activo='segundo'">Gatos</button>
+                        </tr>
+                    </div>
+
+
+
+                    <div>
+                        <p class="text-info d-none" *ngIf="primero" [ngClass]="{'d-block' :activo=='primero'}">
+                            <img src="./assets/img/1.jpg" style="width: 100px; height: 100px;"
+                                class="responsive-img circle">
+                            <button (click)="estadoimagen1 = !estadoimagen1"
+                                class="waves-effect waves-light btn">ADOPTAR</button>
+                        </p>
+                        <img *ngIf="estadoimagen1" src="./assets/img/adop.jpg" style="width: 400px; height: 200px;">
+                    </div>
+
+                    <div>
+                        <p class="text-info d-none" *ngIf="primero" [ngClass]="{'d-block' :activo=='primero'}">
+                            <img src="./assets/img/2.jpg" style="width: 100px; height: 100px;"
+                                class="responsive-img circle">
+                            <button (click)="estadoimagen2 = !estadoimagen2"
+                                class="waves-effect waves-light btn">ADOPTAR</button>
+                        </p>
+                        <img *ngIf="estadoimagen2" src="./assets/img/adop.jpg" style="width: 400px; height: 200px;">
+                    </div>
+
+                    <div>
+                        <p class="text-info d-none" *ngIf="primero" [ngClass]="{'d-block' :activo=='primero'}">
+                            <img src="./assets/img/3.jpg" style="width: 100px; height: 100px;"
+                                class="responsive-img circle">
+                            <button (click)="estadoimagen3 = !estadoimagen3"
+                                class="waves-effect waves-light btn">ADOPTAR</button>
+                        </p>
+                        <img *ngIf="estadoimagen3" src="./assets/img/adop.jpg" style="width: 400px; height: 200px;">
+                    </div>
+
+                    <div>
+                        <p class="text-info d-none" *ngIf="primero" [ngClass]="{'d-block' :activo=='primero'}">
+                            <img src="./assets/img/4.jpg" style="width: 100px; height: 100px;"
+                                class="responsive-img circle">
+                            <button (click)="estadoimagen4 = !estadoimagen4"
+                                class="waves-effect waves-light btn">ADOPTAR</button>
+                        </p>
+                        <img *ngIf="estadoimagen4" src="./assets/img/adop.jpg" style="width: 400px; height: 200px;">
+                    </div>
+
+                    <div>
+                        <p class="text-info d-none" *ngIf="primero" [ngClass]="{'d-block' :activo=='primero'}">
+                            <img src="./assets/img/5.jpg" style="width: 100px; height: 100px;"
+                                class="responsive-img circle">
+                            <button (click)="estadoimagen5 = !estadoimagen5"
+                                class="waves-effect waves-light btn">ADOPTAR</button>
+                        </p>
+                        <img *ngIf="estadoimagen5" src="./assets/img/adop.jpg" style="width: 400px; height: 200px;">
+                    </div>
+
+
+                    <div>
+                        <p class="text-info d-none" *ngIf="primero" [ngClass]="{'d-block' :activo=='primero'}">
+                            <img src="./assets/img/6.jpg" style="width: 100px; height: 100px;"
+                                class="responsive-img circle">
+                            <button (click)="estadoimagen6 = !estadoimagen6"
+                                class="waves-effect waves-light btn">ADOPTAR</button>
+                        </p>
+                        <img *ngIf="estadoimagen6" src="./assets/img/adop.jpg" style="width: 400px; height: 200px;">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p class="text-info d-none" *ngIf="segundo" [ngClass]="{'d-block' :activo=='segundo'}">
+                                <img src="./assets/img/7.jpg" style="width: 100px; height: 100px;"
+                                    class="responsive-img circle">
+                                <button (click)="estadoimagen7 = !estadoimagen7"
+                                    class="waves-effect waves-light btn">ADOPTAR</button>
+                            </p>
+                            <img *ngIf="estadoimagen7" src="./assets/img/adop.jpg" style="width: 400px; height: 200px;">
+                        </div>
+
+                        <div class="col-sm-3">
+                            <p class="text-info d-none" *ngIf="segundo" [ngClass]="{'d-block' :activo=='segundo'}">
+                                <img src="./assets/img/8.jpg" style="width: 100px; height: 100px;"
+                                    class="responsive-img circle">
+                                <button (click)="estadoimagen8 = !estadoimagen8"
+                                    class="waves-effect waves-light btn">ADOPTAR</button>
+                            </p>
+                            <img *ngIf="estadoimagen8" src="./assets/img/adop.jpg" style="width: 400px; height: 200px;">
+                        </div>
+
+
+                        <div class="col-sm-3">
+                            <p class="text-info d-none" *ngIf="segundo" [ngClass]="{'d-block' :activo=='segundo'}">
+                                <img src="./assets/img/9.jpg" style="width: 100px; height: 100px;"
+                                    class="responsive-img circle">
+                                <button (click)="estadoimagen9 = !estadoimagen9"
+                                    class="waves-effect waves-light btn">ADOPTAR</button>
+                            </p>
+                            <img *ngIf="estadoimagen9" src="./assets/img/adop.jpg" style="width: 400px; height: 200px;">
+                        </div>
+
+                        <div class="col-sm-3">
+                            <p class="text-info d-none" *ngIf="segundo" [ngClass]="{'d-block' :activo=='segundo'}">
+                                <img src="./assets/img/10.jpg" style="width: 100px; height: 100px;"
+                                    class="responsive-img circle">
+                                <button (click)="estadoimagen10 = !estadoimagen10"
+                                    class="waves-effect waves-light btn">ADOPTAR</button>
+                            </p>
+                            <img *ngIf="estadoimagen10" src="./assets/img/adop.jpg"
+                                style="width: 400px; height: 200px;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p class="text-info d-none" *ngIf="segundo" [ngClass]="{'d-block' :activo=='segundo'}">
+                                <img src="./assets/img/11.jpg" style="width: 100px; height: 100px;"
+                                    class="responsive-img circle">
+
+                                <button (click)="estadoimagen11 = !estadoimagen11"
+                                    class="waves-effect waves-light btn">ADOPTAR</button>
+
+                            </p>
+                            <img *ngIf="estadoimagen11" src="./assets/img/adop.jpg"
+                                style="width: 400px; height: 200px;">
+                        </div>
+
+                        <div class="col-sm-3">
+                            <p class="text-info d-none" *ngIf="segundo" [ngClass]="{'d-block' :activo=='segundo'}">
+                                <img src="./assets/img/12.jpg" style="width: 100px; height: 100px;"
+                                    class="responsive-img circle">
+                                <button (click)="estadoimagen12 = !estadoimagen12"
+                                    class="waves-effect waves-light btn">ADOPTAR</button>
+
+                            </p>
+                            <img *ngIf="estadoimagen12" src="./assets/img/adop.jpg"
+                                style="width: 400px; height: 200px;">
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+</body>
